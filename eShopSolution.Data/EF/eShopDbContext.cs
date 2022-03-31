@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 
 namespace eShopSolution.Data.EF
 {
-    public class eShopDbContext : DbContext
+    public class EShopDbContext : DbContext
     {
-        public eShopDbContext(DbContextOptions options) : base(options)
+        public EShopDbContext(DbContextOptions options) : base(options)
         {
 
         }
