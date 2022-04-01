@@ -1,4 +1,5 @@
 ﻿using eShopSolution.Application.Catalog.Products.Dtos;
+using eShopSolution.Application.Catalog.Products.Dtos.Manage;
 using eShopSolution.Application.Dtos;
 using System;
 using System.Collections.Generic;
@@ -8,8 +9,8 @@ using System.Threading.Tasks;
 
 namespace eShopSolution.Application.Catalog.Products
 {
-    public interface IPublicProduct
+    public interface IPublicProductService
     {
-         PagedViewModel<ProductViewModel> GetAllbyCategoryId(int categoryId,int pageIndex, int PageSize);
+       Task < PagedResult<ProductViewModel>> GetAllbyCategoryId(GetProductPagingRequest request);
     }
 }
