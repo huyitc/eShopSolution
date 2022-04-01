@@ -5,10 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace eShopSolution.Application.Catalog.Products.Dtos.Manage
+namespace eShopSolution.Application.Catalog.Products.Dtos
 {
-    public class GetProductPagingRequest : PagingRequestBase
+    public class GetProductPagingRequest: PagingRequestBase
     {
+        public string Keyword { get; set; }
+
         public int? CategoryId { get; set; }
+
+        public List<int> CategoryIds { get; set; }
     }
 }
