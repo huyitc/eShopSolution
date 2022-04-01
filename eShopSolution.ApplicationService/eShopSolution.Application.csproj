@@ -5,12 +5,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\eShopSolution.Data\eShopSolution.Data.csproj" />
-    <ProjectReference Include="..\eShopSolutionUtilities\eShopSolutionUtilities.csproj" />
+	  <FrameworkReference Include="Microsoft.AspNetCore.App" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Catalog\Products\Dtos\Public\" />
+    <ProjectReference Include="..\eShopSolution.Data\eShopSolution.Data.csproj" />
+    <ProjectReference Include="..\eShopSolution.ViewModels\eShopSolution.ViewModels.csproj" />
+    <ProjectReference Include="..\eShopSolutionUtilities\eShopSolutionUtilities.csproj" />
   </ItemGroup>
 
 </Project>
